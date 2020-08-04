@@ -46,6 +46,8 @@ input,
 button,
 textarea {
   font: 500 1.6rem Poppins; 
+  color: var(--color-text-base);
+
 }
 /* 1.6rem significa que eu estou aumentando 60% na font-size, o rem é utilizado para aplicações responsivas, que se adaptam a todos os tipos de dispositivos movel, web, tablet,
 a font-size padrão é de 16px, 16 vezes 60%(0,6) fica igual a 9,6px, 1rem = 9,6px
