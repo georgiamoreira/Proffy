@@ -13,3 +13,5 @@ export async function up(knex: Knex) {
 export async function down(knex: Knex) {
   return knex.schema.dropTable('users');
 }
+
+    // yarn knex no terminal para saber quais comandos adicionar no package.json
