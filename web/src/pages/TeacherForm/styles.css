@@ -14,7 +14,7 @@
   border-radius: 0.8rem;
   margin: -3.2rem auto 3.2rem;
   padding-top: 6.4rem;
-  overflow: hidden;  
+  overflow: hidden;
 }
 
 #page-teacher-form main fieldset {
@@ -22,7 +22,7 @@
   padding: 0 2.4rem;
 }
 
-#page-teacher-form main fieldset +fieldset {
+#page-teacher-form main fieldset + fieldset {
   margin-top: 6.4rem;
 }
 
@@ -43,15 +43,13 @@
   border: 0;
   font: 700 1.6rem Archivo;
   color: var(--color-primary);
-  cursor: pointer;  
-  transition: color 0.2s;
- }
+  cursor: pointer;
+  transition: color 0.2s; 
+}
 
 #page-teacher-form main fieldset legend button:hover {
   color: var(--color-primary-dark);
-
 }
-
 
 #page-teacher-form main fieldset .input-block + .textarea-block,
 #page-teacher-form main fieldset .select-block + .input-block {
@@ -96,7 +94,7 @@
 }
 
 #page-teacher-form main footer button:hover {
-  background: var(--color-secundary-dark);  
+  background: var(--color-secundary-dark);
 }
 
 @media (min-width: 700px) {
@@ -108,43 +106,33 @@
     margin-bottom: 0;
   }
 
-#page-teacher-form main fieldset {
-  padding: 0 6.4rem;
- }
-
- #page-teacher-form main .schedule-item {
-   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  column-gap: 1.6rem;
+  #page-teacher-form main fieldset {
+    padding: 0 6.4rem;
   }
 
- #page-teacher-form main .schedule-item .input-block {
-   margin-top: o !important;
- }
-  
+  #page-teacher-form main .schedule-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    column-gap: 1.6rem;
+  }
 
- #page-teacher-form main footer {
-  padding: 4.0rem 6.4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
- }
+  #page-teacher-form main .schedule-item .input-block {
+    margin-top: 0 !important;
+  }
 
- #page-teacher-form main footer p {
-  justify-content: space-between;
+  #page-teacher-form main footer {
+    padding: 4rem 6.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #page-teacher-form main footer p {
+    justify-content: space-between;
+  }
+
+  #page-teacher-form main footer button {
+    width: 20rem;
+    margin-top: 0;
+  }
 }
-
- #page-teacher-form main footer button {
-   width: 20rem;
-   margin-top: 0;
- }
-
-
-
-
-}
-
-
-
-
-
