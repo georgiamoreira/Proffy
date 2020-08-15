@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   profile: {
     flexDirection: 'row',
     alignItems: 'center',
-    padding: 10,
+    padding: 14,
   },
 
   avatar: {
@@ -81,6 +81,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: 8,    
+  },
+
+  favorited: {
+    backgroundColor: '#e33d3d',
   },
 
   contactButton: {
