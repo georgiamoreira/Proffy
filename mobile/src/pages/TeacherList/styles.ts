@@ -19,6 +19,15 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins_400Regular',    
   },
 
+  inputGroup: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',    
+  },
+
+  inputBlock: {
+    width: '48%',    
+  },           
+
   input: {
     height: 54,
     backgroundColor: '#fff',
@@ -28,7 +37,7 @@ const styles = StyleSheet.create({
     marginTop: 4,
     marginBottom: 16,   
   },
-  
+
 })
 
 export default styles;
