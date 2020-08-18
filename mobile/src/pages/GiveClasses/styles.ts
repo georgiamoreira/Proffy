@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
 
   okButton: {
     marginVertical: 40,
-    backgroundColor: '#04d361',
+    backgroundColor: '#F9A826',
     height: 58,
     alignItems: 'center',
     justifyContent: 'center',

@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   },
 
   submitButton: {
-    backgroundColor: '#04d361',
+    backgroundColor: '#F9A826',
     height: 46,
     borderRadius: 8,
     flexDirection: 'row',    

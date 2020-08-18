@@ -5,12 +5,14 @@ const styles = StyleSheet.create({
     flex:1,
     backgroundColor: '#8257e5',
     justifyContent: 'center',
-    padding: 20
+    padding: 20,
   },
 
   banner: {
     width: '100%',
-    resizeMode: 'contain'    
+    resizeMode: 'contain',
+    marginBottom: -30,
+    
   },
 
   title: {
@@ -18,7 +20,9 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 20,
     lineHeight: 30,
-    marginTop: 20,  // GEORGIA EU DIMINUI ESSE MARGIN TOP PARA DEIXAR A TELA MENORZINHA *  
+    marginTop: -20,  // GEORGIA EU DIMINUI ESSE MARGIN TOP PARA DEIXAR A TELA MENORZINHA *  
+    marginBottom: 10,
+    
   },
 
   titleBold: {
@@ -27,25 +31,28 @@ const styles = StyleSheet.create({
 
   buttonsContainer: {
     flexDirection: 'row',
-    marginTop: 40,
     justifyContent: 'space-between'
   },
 
   button: {
-    height: 150,
+    height: 130,
     width: '48%',
     backgroundColor: '#333',
     borderRadius: 8,
     padding: 20,
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    marginTop: 10,
+    
+
   },
 
   buttonPrimary: {
-    backgroundColor: '#9871f5'
+    backgroundColor: '#F9A826'
   },
 
   buttonSecondary: {
-    backgroundColor: '#04d361'
+    backgroundColor: '#9871f5'
+    // backgroundColor: '#04d361'
   },
 
   buttonText: {
@@ -59,8 +66,8 @@ const styles = StyleSheet.create({
     color: '#d4c2ff',
     fontSize: 12,
     lineHeight: 20,
-    maxWidth: 140,
-    marginTop: 40,
+    maxWidth: 220,
+    marginTop: 30,
   },
 
 });

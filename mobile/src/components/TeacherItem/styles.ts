@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
   },
 
   favoriteButton: {
-    backgroundColor: '#8257e5',
+    backgroundColor: '#F9A826',
     width: 56,
     height: 56,
     borderRadius: 8,
@@ -84,11 +84,11 @@ const styles = StyleSheet.create({
   },
 
   favorited: {
-    backgroundColor: '#e33d3d',
+    backgroundColor: '#8257e5',
   },
 
   contactButton: {
-    backgroundColor: '#04d361',
+    backgroundColor: '#F9A826',
     flex: 1,
     height: 56,
     borderRadius: 8,
