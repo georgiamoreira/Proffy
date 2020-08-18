@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { View, ScrollView, Text, TextInput } from 'react-native';
 import { BorderlessButton, RectButton } from 'react-native-gesture-handler';
 import { Feather } from '@expo/vector-icons'
@@ -11,6 +11,7 @@ import TeacherItem, { Teacher } from '../../components/TeacherItem';
 import api from '../../services/api';
 
 import styles from './styles';
+import { useFocusEffect } from '@react-navigation/native';
 
 function TeacherList() {
   const [teachers, setTeachers] = useState([]);
@@ -21,39 +22,32 @@ function TeacherList() {
   const [week_day, setWeekDay] = useState('');
   const [time, setTime] = useState('');
 
-  useEffect(() => {
+  function loadFavorites() {
     AsyncStorage.getItem('favorites').then(response => {
-      console.log();
-      console.log();
-      console.log();
-      console.log();
-      console.log();
-      console.log();
-      console.log();
-      
-      response && console.log('**********************', JSON.parse(response));
-            
       if (response) {
-
         const favoritedTeachers = JSON.parse(response);
         const favoritedTeachersIds = favoritedTeachers.map((teacher: Teacher) => {
           return teacher.id;
         })
 
-        console.log('**********', favoritedTeachersIds);
-        
-
         setFavorites(favoritedTeachersIds);
       }
     });
-  }, []);
+  }
 
+  //SUPOSTAMENTE ERA PARA RECARREGAR A LISTA DE FAVORITOS CASO DESFAVOTIRASSE, MAS NÃO ESTÁ FUNCIONANDO, TEM ADICONAR GERENCIA DE ESTADOS, CONTEX API, REDUX 
+  useFocusEffect(() => {
+    loadFavorites();
+  });
 
+  
   function handleToggleFiltersVisible() {
     setIsFiltersVisible(!isFiltersVisible);
   }
 
   async function handleFiltersSubmit() {
+    loadFavorites();
+
     const response = await api.get('classes', {
       params: {
         week_day,
