@@ -1,5 +1,5 @@
 <div align="center" styles="display: flex">
-  <img alt="App Demo" src="1.png">  
+  <img alt="App Demo" src="landingpage.png">  
 </div>
 <h1 align="center">
     <br>
@@ -13,7 +13,7 @@
 </p>
 
 <div align="center" styles="display: flex">
-  <img alt="App Demo" src="2.png">
+  <img alt="App Demo" src="proffys.png">
 </div>
 
 ## :rocket: About the project
