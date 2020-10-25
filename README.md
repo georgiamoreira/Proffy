@@ -16,6 +16,10 @@
   <img alt="App Demo" src="proffys.png">
 </div>
 
+## :rocket: Watch the project working
+
+<a href="https://www.youtube.com/watch?v=CzYTM0OBKjQ&ab_channel=Gangschannel">Click here to see the youtube video!</a>
+
 ## :rocket: About the project
 
 Proffy is an educational platform to connect teachers and students.
